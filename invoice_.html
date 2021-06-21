@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from Creditclan-html.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Jun 2021 14:15:41 GMT -->
+<!-- Mirrored from Creditclan-html.vercel.app/invoice.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Jun 2021 14:16:00 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
@@ -15,6 +15,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .budget-content {
+    position: relative;
+    height: auto !important;
+}
+    </style>
 </head>
 
 <body class="dashboard">
@@ -26,7 +32,6 @@
     </div>
 
     <div id="main-wrapper">
-
 
         <div class="header">
             <div class="container">
@@ -160,17 +165,7 @@
                             <span class="nav-text">Customers</span>
                         </a>
                     </li>
-                    <!-- <li><a href="balance.html">
-                    <span><i class="ri-wallet-line"></i></span>
-                    <span class="nav-text">Wallet</span>
-                        </a>
-                    </li>
-                    <li><a href="bill.html">
-                            <span><i class="ri-secure-payment-line"></i></span>
-                            <span class="nav-text">Payment</span>
-                        </a>
-                    </li>
-                    -->
+                    
                     <li><a href="settings-profile.html">
                             <span><i class="ri-settings-3-line"></i></span>
                             <span class="nav-text">Settings</span>
@@ -191,190 +186,72 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-xl-4">
                             <div class="page-title-content">
-                                <h3>Dashboard</h3>
-                                <p class="mb-2">Welcome Creditclan Dashboard</p>
+                                <h3>Collections Portfolio</h3>
+                                <p class="mb-2">Welcome Creditclan Collections page</p>
                             </div>
                         </div>
                         <div class="col-auto">
                             <div class="breadcrumbs"><a href="#">Home </a><span><i
-                                        class="ri-arrow-right-s-line"></i></span><a href="#">Dashboard</a></div>
+                                        class="ri-arrow-right-s-line"></i></span><a href="#">Collections</a></div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="row">
-
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Collections Stats</h4>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="stat-widget d-flex align-items-center bg-white">
+                            <div class="widget-icon me-3 bg-primary"><span><i class="ri-file-copy-2-line"></i></span>
                             </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-primary"><span><i
-                                                        class="ri-wallet-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>432568</h3>
-                                                <p>Last Balance</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-secondary"><span><i
-                                                        class="ri-wallet-2-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>245860</h3>
-                                                <p>Today</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-success"><span><i
-                                                        class="ri-wallet-3-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>25.35</h3>
-                                                <p>Past Week</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-danger"><span><i
-                                                        class="ri-wallet-3-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>22.56</h3>
-                                                <p>This Month</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="widget-content">
+                                <h3>483</h3>
+                                <p>Total Collectionss</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6">
-                        <div id="user-activity" class="card" data-aos="fade-up">
-                            <div class="card-header">
-                                <h4 class="card-title">Revenue</h4>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="stat-widget d-flex align-items-center bg-white">
+                            <div class="widget-icon me-3 bg-success"><span><i class="ri-file-list-3-line"></i></span>
                             </div>
-                            <div class="card-body">
-                                <div class="chartjs-size-monitor">
-                                    <div class="chartjs-size-monitor-expand">
-                                        <div class=""></div>
-                                    </div>
-                                    <div class="chartjs-size-monitor-shrink">
-                                        <div class=""></div>
-                                    </div>
-                                </div>
-                                <canvas id="activity"></canvas>
+                            <div class="widget-content">
+                                <h3>273</h3>
+                                <p>Paid Collectionss</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Transaction History</h4>
-                                <a href="#">See more</a>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="stat-widget d-flex align-items-center bg-white">
+                            <div class="widget-icon me-3 bg-warning"><span><i class="ri-file-paper-line"></i></span>
                             </div>
-                            <div class="card-body">
-                                <div class="invoice-content">
-                                    <ul>
-                                        <li class="d-flex justify-content-between active">
-                                            <div class="d-flex align-items-center">
-                                                <div class="invoice-user-img me-3"><img src="images/avatar/1.jpg" alt=""
-                                                        width="50"></div>
-                                                <div class="invoice-info">
-                                                    <h5 class="mb-0">Terry P. Camacho</h5>
-                                                    <p>5 january 2021 at 10.15 pm</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-end">
-                                                <h5 class="mb-2">+450.00</h5>
-                                                <span class=" text-white bg-success">Paid</span>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <div class="invoice-user-img me-3"><img src="images/avatar/2.jpg" alt=""
-                                                        width="50"></div>
-                                                <div class="invoice-info">
-                                                    <h5 class="mb-0">John L. Foster</h5>
-                                                    <p>5 january 2021 at 10.15 pm</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-end">
-                                                <h5 class="mb-2">+450.00</h5>
-                                                <span class=" text-white bg-warning">Due</span>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <div class="invoice-user-img me-3"><img src="images/avatar/3.jpg" alt=""
-                                                        width="50"></div>
-                                                <div class="invoice-info">
-                                                    <h5 class="mb-0">John C. Adams</h5>
-                                                    <p>5 january 2021 at 10.15 pm</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-end">
-                                                <h5 class="mb-2">+450.00</h5>
-                                                <span class=" text-white bg-danger">Cancel</span>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <div class="invoice-user-img me-3"><img src="images/avatar/4.jpg" alt=""
-                                                        width="50"></div>
-                                                <div class="invoice-info">
-                                                    <h5 class="mb-0">Weston P. Thomas</h5>
-                                                    <p>5 january 2021 at 10.15 pm</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-end">
-                                                <h5 class="mb-2">+450.00</h5>
-                                                <span class=" text-white bg-success">Paid</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="widget-content">
+                                <h3>121</h3>
+                                <p>Unpaid Collections</p>
                             </div>
                         </div>
                     </div>
-                    <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Statistics</h4>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="stat-widget d-flex align-items-center bg-white">
+                            <div class="widget-icon me-3 bg-danger"><span><i class="ri-file-paper-2-line"></i></span>
                             </div>
-                            <div class="card-body">
-                                <div class="chartjs-size-monitor">
-                                    <div class="chartjs-size-monitor-expand">
-                                        <div class=""></div>
-                                    </div>
-                                    <div class="chartjs-size-monitor-shrink">
-                                        <div class=""></div>
-                                    </div>
-                                </div>
-                                <canvas id="most-selling-items"></canvas>
+                            <div class="widget-content">
+                                <h3>89</h3>
+                                <p>Canceled Collections</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-6 col-md-12">
+                    <div class="col-xl-12">
                         <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Goals Budget</h4>
-                            </div>
+                            
                             <div class="card-body">
                                 <div class="budget-content">
                                     <ul>
                                         <li class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex flex-grow-2">
-                                                <div class="budget-icon me-3 mt-1"><img src="images/social/facebook.png"
+                                                <div class="budget-icon me-3 mt-1"><img src="images/avatar/1.jpg"
                                                         alt="" width="40"></div>
                                                 <div class="budget-info flex-grow-2 me-3">
                                                     <div class="d-flex justify-content-between mb-1">
-                                                        <h5 class="mb-1">Facebook Ads</h5>
+                                                        <h5 class="mb-1">Daniel Man <br><span style="font-size: 10px;">50000 | Daily | 60 days</span></h5>
+                                                        
                                                         <p class="mb-0"><strong>75 </strong>/ 100</p>
                                                     </div>
                                                     <div class="progress">
@@ -387,11 +264,11 @@
                                         </li>
                                         <li class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex flex-grow-2">
-                                                <div class="budget-icon me-3 mt-1"><img src="images/social/youtube.png"
+                                                <div class="budget-icon me-3 mt-1"><img src="images/avatar/1.jpg"
                                                         alt="" width="40"></div>
                                                 <div class="budget-info flex-grow-2 me-3">
                                                     <div class="d-flex justify-content-between mb-1">
-                                                        <h5 class="mb-1">Youtube Premium</h5>
+                                                        <h5 class="mb-1">Isaiah Good <br><span style="font-size: 10px;">50000 | Daily | 60 days</span></h5>
                                                         <p class="mb-0"><strong>25 </strong>/ 100</p>
                                                     </div>
                                                     <div class="progress">
@@ -403,11 +280,11 @@
                                         </li>
                                         <li class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex flex-grow-2">
-                                                <div class="budget-icon me-3 mt-1"><img src="images/social/spotify.png"
+                                                <div class="budget-icon me-3 mt-1"><img src="images/avatar/1.jpg"
                                                         alt="" width="40"></div>
                                                 <div class="budget-info flex-grow-2 me-3">
                                                     <div class="d-flex justify-content-between mb-1">
-                                                        <h5 class="mb-1">Spotify Music</h5>
+                                                        <h5 class="mb-1">Peter Mark <br><span style="font-size: 10px;">50000 | Daily | 60 days</span></h5>
                                                         <p class="mb-0"><strong>50 </strong>/ 100</p>
                                                     </div>
                                                     <div class="progress">
@@ -419,11 +296,11 @@
                                         </li>
                                         <li class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex flex-grow-2">
-                                                <div class="budget-icon me-3 mt-1"><img src="images/social/skype.png"
+                                                <div class="budget-icon me-3 mt-1"><img src="images/avatar/1.jpg"
                                                         alt="" width="40"></div>
                                                 <div class="budget-info flex-grow-2 me-3">
                                                     <div class="d-flex justify-content-between mb-1">
-                                                        <h5 class="mb-1">Skype Premium</h5>
+                                                        <h5 class="mb-1">Stephen Matthew <br><span style="font-size: 10px;">50000 | Daily | 60 days</span></h5>
                                                         <p class="mb-0"><strong>45 </strong>/ 100</p>
                                                     </div>
                                                     <div class="progress">
@@ -435,11 +312,11 @@
                                         </li>
                                         <li class="d-flex justify-content-between align-items-center">
                                             <div class="d-flex flex-grow-2">
-                                                <div class="budget-icon me-3 mt-1"><img src="images/social/envato.png"
+                                                <div class="budget-icon me-3 mt-1"><img src="images/avatar/1.jpg"
                                                         alt="" width="40"></div>
                                                 <div class="budget-info flex-grow-2 me-3">
                                                     <div class="d-flex justify-content-between mb-1">
-                                                        <h5 class="mb-1">Envato Element</h5>
+                                                        <h5 class="mb-1">John James <br><span style="font-size: 10px;">50000 | Daily | 60 days</span></h5>
                                                         <p class="mb-0"><strong>35 </strong>/ 100</p>
                                                     </div>
                                                     <div class="progress">
@@ -454,16 +331,11 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
 
-
-
     </div>
-
 
 
 
@@ -471,29 +343,17 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
-    <script src="vendor/chartjs/chartjs.js"></script>
-
-
-
-    <script src="js/plugins/chartjs-line-init.js"></script>
-
-
-
-
-    <script src="js/plugins/chartjs-donut.js"></script>
 
 
 
 
 
 
-    <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="js/plugins/perfect-scrollbar-init.js"></script>
 
 
 
-    <script src="vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="js/plugins/circle-progress-init.js"></script>
+
+
 
 
 
@@ -507,6 +367,6 @@
 </body>
 
 
-<!-- Mirrored from Creditclan-html.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Jun 2021 14:15:52 GMT -->
+<!-- Mirrored from Creditclan-html.vercel.app/invoice.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Jun 2021 14:16:00 GMT -->
 
 </html>
