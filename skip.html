@@ -198,7 +198,19 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h4 class="card-title">Details</h4>
+                                    <div class="dropdown profile_log dropdown">
+                                        <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           <div class="btn btn-primary"><span><i class="ri-user-line"></i></span> Actions</div>
+                                        </div>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right" style="position: absolute; transform: translate3d(-200px, 40px, 0px); top: 0px; left: 0px; will-change: transform;" x-placement="bottom-end">
+                                           
+                                           <a class="dropdown-item" href="profile.html"><span><i class="ri-user-line"></i></span>Cancel</a>
+                                           <a class="dropdown-item" href="skip.html"><span><i class="ri-wallet-line"></i></span>Skip Interval</a>
+                                           <a class="dropdown-item" href="settings-profile.html"><span><i class="ri-settings-3-line"></i></span>Check Status</a>
+                                        </div>
+                                     </div>
                                 </div>
+                                
                                 <div class="card-body">
                                     <div class="card-body">
                                         <div class="unpaid-content">
@@ -244,63 +256,53 @@
                                 <div class="row">
                                     <div class="col-xxl-12">
                                         <div class="card">
-                                            <div class="invoice-table">
-                                                <div class="table-responsive">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                               
-                                                                <th>Date</th>
-                                                                <th>Amount</th>
-                                                                <th>Reference</th>
-                                                                <th>Status</th>
-                                                                
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>February 16, 2021</td>
-                                                                
-                                                                <td>3000</td>
-                                                                
-                                                                <td>CC12345684940</td> 
-                                                                <td><span class="badge px-3 py-2 bg-success">Success</span></td>
-                                                               
-                                                            </tr>
-                                                            <tr>
-                                                                <td>February 16, 2021</td>
-                                                                
-                                                                <td>3000</td>
-                                                                
-                                                                <td>CC12345684940</td> 
-                                                                
-                                                                <td><span class="badge px-3 py-2 bg-success">Success</span></td>
-                                                               
-                                                            </tr>
-                                                            <tr>
-                                                                <td>February 16, 2021</td>
-                                                                
-                                                                <td>3000</td>
-                                                                
-                                                                <td>CC12345684940</td> 
-                                                                
-                                                                <td><span class="badge px-3 py-2 bg-danger">Failed</span></td>
-                                                               
-                                                            </tr>
-                                                            <tr>
-                                                                <td>February 16, 2021</td>
-                                                                
-                                                                <td>3000</td>
-                                                                
-                                                                <td>CC12345684940</td>
-                                                                
-                                                                <td><span class="badge px-3 py-2 bg-danger">Failed</span></td>
-                                                               
-                                                            </tr>
-                                                            
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                                            <div class="card-body">
+                                                <form action="#">
+                                                    <div class="row g-3">
+                                                        <div class="col-12 mb-3">
+                                                            <label class="form-label">No of Interval</label>
+                                                            <input type="text" class="form-control" placeholder="">
+                                                        </div>
+                                                        <div class="invoice-table">
+                                                            <div class="table-responsive">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                           
+                                                                            <th>Date</th>
+                                                                            <th>Amount</th>
+                                                                            
+                                                                            
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>February 16, 2021</td>
+                                                                            
+                                                                            <td>3000</td>
+                                                                            
+                                                                           
+                                                                           
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>February 16, 2021</td>
+                                                                            
+                                                                            <td>3000</td>
+                                                                            
+                                                                            
+                                                                           
+                                                                        </tr>
+                                                                       
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="col-12 col-12 mb-3">
+                                                            <button class="btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
