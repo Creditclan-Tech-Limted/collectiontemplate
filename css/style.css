@@ -9943,8 +9943,7 @@ button,
 
 .invoice-content,
 .budget-content {
-  position: relative;
-  height: 295px; }
+  position: relative; }
 
 .auth-form {
   padding: 30px 20px 10px; }
