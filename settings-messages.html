@@ -161,11 +161,11 @@
                         </a>
                     </li>
                     <!-- <li><a href="balance.html">
-                                <span><i class="ri-wallet-line"></i></span>
-                                <span class="nav-text">Wallet</span>
-                                    </a>
-                                </li>
-                                -->
+                    <span><i class="ri-wallet-line"></i></span>
+                    <span class="nav-text">Wallet</span>
+                        </a>
+                    </li>
+                    -->
                     <li><a href="transfers.html">
                             <span><i class="ri-secure-payment-line"></i></span>
                             <span class="nav-text">Transfers</span>
@@ -181,7 +181,8 @@
                         <span class="nav-text">Messages</span>
                     </a>
                 </li>
-                    <li class="logout"><a href="signin.html">
+                    <li
+                     class="logout"><a href="signin.html">
                             <span><i class="ri-logout-circle-line"></i></span>
                             <span class="nav-text">Signout</span>
                         </a>
@@ -196,7 +197,7 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-xl-4">
                             <div class="page-title-content">
-                                <h3>Dashboard</h3>
+                                <h3>Transfers</h3>
                                 <p class="mb-2">Welcome Creditclan Dashboard</p>
                             </div>
                         </div>
@@ -207,188 +208,174 @@
                     </div>
                 </div>
                 <div class="row">
-
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Collections Stats</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-primary"><span><i
-                                                        class="ri-wallet-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>432568</h3>
-                                                <p>Last Balance</p>
-                                            </div>
-                                        </div>
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-secondary"><span><i
-                                                        class="ri-wallet-2-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>245860</h3>
-                                                <p>Today</p>
-                                            </div>
-                                        </div>
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-success"><span><i
-                                                        class="ri-wallet-3-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>25.35</h3>
-                                                <p>Past Week</p>
-                                            </div>
-                                        </div>
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-danger"><span><i
-                                                        class="ri-wallet-3-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>22.56</h3>
-                                                <p>This Month</p>
-                                            </div>
-                                        </div>
-                                        <div class="stat-widget d-flex align-items-center">
-                                            <div class="widget-icon me-3 bg-danger"><span><i
-                                                        class="ri-wallet-3-line"></i></span></div>
-                                            <div class="widget-content">
-                                                <h3>22.56</h3>
-                                                <p>This Month</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                        
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                        
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                        
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6">
-                        <div id="user-activity" class="card" data-aos="fade-up">
-                            <div class="card-header">
-                                <h4 class="card-title">Revenue</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="chartjs-size-monitor">
-                                    <div class="chartjs-size-monitor-expand">
-                                        <div class=""></div>
-                                    </div>
-                                    <div class="chartjs-size-monitor-shrink">
-                                        <div class=""></div>
-                                    </div>
-                                </div>
-                                <canvas id="activity"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-xxl-4 col-xl-4 col-lg-6 col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Statistics</h4>
+                                <h4 class="card-title">Update Message</h4>
                             </div>
                             <div class="card-body">
-                                <div class="chartjs-size-monitor">
-                                    <div class="chartjs-size-monitor-expand">
-                                        <div class=""></div>
+                                <form action="#">
+                                    <div class="row g-3">
+                                        
+                                        <div class="col-12 mb-3">
+                                            <label class="form-label">Message</label>
+                                            <textarea type="password" class="form-control" placeholder=""></textarea>
+                                        </div>
+                                        
+                                        
                                     </div>
-                                    <div class="chartjs-size-monitor-shrink">
-                                        <div class=""></div>
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <label class="form-label">Destination</label> 
+                                        </div>
+                                        <div class="col-xl-12">
+                                           <div class="mb-3"><label class="form-label">Customer</label><input class="pull-right" type="checkbox" placeholder="Jonaed Bogdadi">
+                                           </div>
+                                           <div class="mb-3"><label class="form-label">Faamily</label><input type="checkbox" class="pull-right" placeholder="Jonaed@bogdad.com ">
+                                           </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                           <div class="mb-3"><label class="form-label">Friends</label><input type="checkbox" class="pull-right" placeholder="Jonaed Bogdadi"></div>
+                                           <div class="mb-3"><label class="form-label">Religious Contacts</label><input type="checkbox" class="pull-right" placeholder="Jonaed Bogdadi"></div>
+                                           <div class="mb-3"><label class="form-label">Work Contacts</label><input type="checkbox" class="pull-right" placeholder="Jonaed Bogdadi"></div>
+                                        </div>
+                                     </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header flex-row">
+                                    <h4 class="card-title">Reminder Settings </h4>
+                                   
+                                </div>
+                                <div class="card-body">
+                                    <div class="invoice-table">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </th>
+                                                        <th>Day</th>
+                                                        <th>Message</th>
+                                                        <th>Destination</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>7 days before</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>6 days before</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>5 days before</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>4 days before</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>3 days before</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>2 days before</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>1 day before</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>Due</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" value=""></div>
+                                                        </td>
+                                                        <td>Default</td>
+                                                        <td>Hello how are u </td>
+                                                        
+                                                        <td>Customer,Family,Friends</td>
+                                                        
+                                                        <td><a class="btn btn-primary" href="collection-details.html"><span><i class="bi bi-plus"></i></span>View</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
-                                <canvas id="most-selling-items"></canvas>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-6 col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Goals Budget</h4>
-                            </div>
-                            <div class="card-body">
-                                <div id='calendar'></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Transaction History</h4>
-                                <a href="#">See more</a>
-                            </div>
-                            <div class="card-body">
-                                <div class="invoice-content">
-                                    <ul>
-                                        <li class="d-flex justify-content-between active">
-                                            <div class="d-flex align-items-center">
-                                                <div class="invoice-user-img me-3"><img src="images/avatar/1.jpg" alt=""
-                                                        width="50"></div>
-                                                <div class="invoice-info">
-                                                    <h5 class="mb-0">Terry P. Camacho</h5>
-                                                    <p>5 january 2021 at 10.15 pm</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-end">
-                                                <h5 class="mb-2">+450.00</h5>
-                                                <span class=" text-white bg-success">Paid</span>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <div class="invoice-user-img me-3"><img src="images/avatar/2.jpg" alt=""
-                                                        width="50"></div>
-                                                <div class="invoice-info">
-                                                    <h5 class="mb-0">John L. Foster</h5>
-                                                    <p>5 january 2021 at 10.15 pm</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-end">
-                                                <h5 class="mb-2">+450.00</h5>
-                                                <span class=" text-white bg-warning">Due</span>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <div class="invoice-user-img me-3"><img src="images/avatar/3.jpg" alt=""
-                                                        width="50"></div>
-                                                <div class="invoice-info">
-                                                    <h5 class="mb-0">John C. Adams</h5>
-                                                    <p>5 january 2021 at 10.15 pm</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-end">
-                                                <h5 class="mb-2">+450.00</h5>
-                                                <span class=" text-white bg-danger">Cancel</span>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <div class="invoice-user-img me-3"><img src="images/avatar/4.jpg" alt=""
-                                                        width="50"></div>
-                                                <div class="invoice-info">
-                                                    <h5 class="mb-0">Weston P. Thomas</h5>
-                                                    <p>5 january 2021 at 10.15 pm</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-end">
-                                                <h5 class="mb-2">+450.00</h5>
-                                                <span class=" text-white bg-success">Paid</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-
+                   
                 </div>
             </div>
         </div>
@@ -431,20 +418,9 @@
 
 
 
-    <link href='fullcalendar/main.css' rel='stylesheet' />
-    <script src='fullcalendar/main.js'></script>
 
-    <script>
 
-        document.addEventListener('DOMContentLoaded', function() {
-          var calendarEl = document.getElementById('calendar');
-          var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth'
-          });
-          calendar.render();
-        });
-  
-      </script>
+
     <script src="js/scripts.js"></script>
 
 
